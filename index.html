@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="icon" href="./assets/favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
+	<title>Music Player</title>
+</head>
+<body>
+	<img class="background" src="./assets/img/hello.png" alt="">
+	<div class="container">
+		<div class="audio-container">
+				<img src="./assets/img/hello.png" alt="" class="audio-img">
+				<div class="control-panel">
+					<img src="./assets/svg/play.png" alt="" class="play">
+					<img src="./assets/svg/backward.png" alt="" class="backward">
+					<img src="./assets/svg/forward.png" alt="" class="forward">
+					<div class="song-artist">Pop Smoke</div>
+					<div class="song-name">Hello</div>
+					<input class="progress-bar" type="range" min="0" max="190.589388" value="0" step="0.000001" onchange="changeProgressBar()">
+					<div class="currentTime">0:00</div>
+					<div class="durationTime">3:10</div>
+				</div>
+		</div>
+	</div>
+	<script src="./scripts/script.js"></script>
+</body>
+</html>

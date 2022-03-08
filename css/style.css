@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	background-color: black;
+	z-index: -1;
+}
+.background{
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	filter: blur(4px);
+}
+.container{
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	backdrop-filter: blur(4px);
+}
+.audio-container{
+	width: 333px;
+	height: 400px;
+	margin:  auto;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #000;
+	overflow: hidden;
+}
+.audio-img{
+	width: 100%;
+	transform: scale(1);
+	border-radius: 10px;
+	z-index: 3;
+	transition: .8s;
+}
+.control-panel{
+	background: linear-gradient(45deg, rgb(40, 40, 40), rgb(133, 133, 133));
+	height: 150px;
+	position: relative;
+	bottom: 60px;
+}
+.play{
+	width: 50px;
+	height: 50px;
+	filter: invert(1)
+}
+.backward, .forward{
+	width: 30px;
+	height: 30px;
+	filter: invert(1);
+}
+.progress-bar{
+	cursor: pointer;
+	width: 213px;
+	height: 5px;
+	background: #000;
+	border-radius: 30px;
+	appearance: none;
+	left: 18%;
+	bottom: 10px;
+	position: relative;
+}
+.progress-bar::-webkit-slider-thumb {
+	appearance: none;
+	height: 10px;
+  width: 7px;
+  background: -webkit-linear-gradient(45deg, rgb(213, 213, 213), rgb(193, 255, 6));
+  border-radius: 30px;
+  cursor: pointer;
+}
+.currentTime{
+	position: relative;
+	bottom: 13px;
+	left: 17.5%;
+	color: #fff;
+	font-size: 13px;
+}
+.durationTime{
+	position: relative;
+	bottom: 54px;
+	left: 73%;
+	color: #C1FF06;
+	font-size: 13px;
+}
+.forward{
+	position: relative;
+	left: 55%;
+	top: 15%;
+	transition: .3s;
+}
+.backward{
+	position: relative;
+	left: 65%;
+	top: -5%;
+	transition: .3s;
+}
+.song-artist{
+	font-weight: bold;
+	color: #C1FF06;
+	font-size: 20px;
+	position: relative;
+	bottom: 20%;
+	left: 28%;
+	width: 175px;
+}
+.song-name{
+	color: #fff;
+	font-size: 17px;
+	position: relative;
+	left: 28%;
+	bottom: 20%;
+	width: 175px;
+}
+.play{
+	position: relative;
+	left: 9%;
+	top: 15%;
+	transition: .3s;
+}
+.play:hover, .forward:hover, .backward:hover{
+	filter: invert(70%);
+	cursor: pointer;
+}
